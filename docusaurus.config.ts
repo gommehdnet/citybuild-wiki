@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "img/favicon.png",
 
   // todo: change this to final url
-  url: "https://gommehdnet.github.io/citybuild-wiki/",
+  url: "https://gommehdnet.github.io",
   baseUrl: "/citybuild-wiki/",
 
   // GitHub pages deployment config.
