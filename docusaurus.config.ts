@@ -35,10 +35,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/gommehdnet/citybuild-wiki/edit/main/",
+          editUrl: "https://github.com/gommehdnet/citybuild-wiki/edit/main/",
         },
         blog: {
           showReadingTime: true,
@@ -46,11 +43,8 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
+            "https://github.com/gommehdnet/citybuild-wiki/tree/main/packages/create-docusaurus/templates/shared/",
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
@@ -63,7 +57,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "GommeHD.net CityBuild Wiki",
@@ -76,66 +69,22 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Get Started",
         },
         {
-          to: "/",
-          label: "Hier könnte Ihre Werbung stehen",
+          to: "https://gommehd.net",
+          label: "GommeHD.net",
           position: "left",
         },
-        {
+        /*{
           type: "localeDropdown",
           position: "right",
-        },
+        }, add to enable language switcher*/
       ],
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Wiki",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "YouTube",
-              href: "https://youtube.com/GommeHDnet",
-            },
-            {
-              label: "Discord",
-              href: "https://discord.gg/gommehdnet",
-            },
-            {
-              label: "X",
-              href: "https://x.com/gommehdnet",
-            },
-            {
-              label: "TikTok",
-              href: "https://tiktok.com/@gommehdnet",
-            },
-          ],
-        },
-        {
-          title: "Mehr",
-          items: [
-            {
-              label: "Extra Link",
-              to: "/",
-            },
-            {
-              label: "Hauptseite",
-              href: "https://gommehd.net",
-            },
-          ],
-        },
-      ],
+      links: [],
       copyright: `Copyright © ${new Date().getFullYear()} GommeHD.net. Gemacht mit Docusaurus.`,
     },
     prism: {
