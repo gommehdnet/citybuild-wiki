@@ -16,7 +16,9 @@ const MinecraftSlot: React.FC<MinecraftSlotProps> = (props) => {
         <img src={convertToImageURL(props.itemName)} alt="" />
         {props.tooltip && (
           <div className={styles.tooltip}>
-            <MinecraftTextFormatter text={props.tooltip} />
+            <div className={styles.tooltipcontentwrapper}>
+              <MinecraftTextFormatter text={props.tooltip} />
+              </div>
           </div>
         )}
       </div>
