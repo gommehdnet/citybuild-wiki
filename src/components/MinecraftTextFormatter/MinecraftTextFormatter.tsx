@@ -131,10 +131,10 @@ const MinecraftTextFormatter = ({ text }) => {
           formattedText.push(
             <span key={index} style={style}>
               {part.split("\n").map((line, i) => (
-                <React.Fragment key={i}>
+                <div key={i}>
                   {line}
                   {i < part.split("\n").length - 1 && <br />}
-                </React.Fragment>
+                </div>
               ))}
             </span>
           );

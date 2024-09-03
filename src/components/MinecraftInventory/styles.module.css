@@ -1,8 +1,8 @@
 /* src/components/MinecraftInventory.module.css */
 
 @font-face {
-    font-family: "Minecraftia";
-    src: url('/fonts/minecraftia/Minecraftia-Regular.ttf') format('truetype');
+    font-family: "Mojangles";
+    src: url('/fonts/mojangles/Mojangles.otf') format('truetype');
 }
 
 .inventoryContainer {
@@ -33,14 +33,14 @@
 }
 
 .header {
-    font-family: 'Minecraftia', sans-serif;
-    font-size: 14px;
+    font-family: 'Mojangles', sans-serif;
+    font-size: 15px;
     color: #575757;
     /* Neue Schriftfarbe */
     position: absolute;
-    top: 8px;
+    top: 5px;
     /* Mehr Abstand über dem Text */
-    left: 12px;
+    left: 10px;
     /* Abstand vom linken Rand des Inventars */
     line-height: 1;
     margin-bottom: 8px;
@@ -113,7 +113,6 @@
     /* Tooltip-Hintergrund */
     color: #e7e7e7;
     /* Angepasste Textfarbe */
-    padding: 10px 10px 0 10px;
     border-radius: 5px;
     border: 1px solid #300270;
     /* Tooltip-Rand */
@@ -121,10 +120,14 @@
     /* Erlaubt Zeilenumbrüche im Tooltip */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     z-index: 10;
-    font-family: 'Minecraftia', sans-serif;
+    font-family: 'Mojangles', sans-serif;
     /* Verwendung der Minecraftia-Schriftart */
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 16px;
     /* Zeilenhöhe für bessere Lesbarkeit */
     width: max-content !important;
+    line-height: 1;
+}
+
+.tooltipcontentwrapper {
+    padding: 10px 10px 5px;
 }
