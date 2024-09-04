@@ -7,9 +7,8 @@ const config: Config = {
   tagline: "Und wir fangen gerade erst an!",
   favicon: "img/favicon.png",
 
-  // todo: change this to final url
-  url: "https://gommehdnet.github.io",
-  baseUrl: "/citybuild-wiki/",
+  url: "https://cbwiki.gommehd.net",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
