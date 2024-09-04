@@ -13,9 +13,9 @@ const MinecraftInventory: React.FC<MinecraftInventoryProps> = ({
   slots,
   headerText,
 }) => {
-  if (/\blinux\b/i.test(navigator.userAgent)) {
+  /*if (/\blinux\b/i.test(navigator.userAgent)) {
     document.body.className += " linux";
-  }
+  }*/
 
   return (
     <div className={styles.inventoryContainer}>
