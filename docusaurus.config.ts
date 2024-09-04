@@ -85,7 +85,7 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} GommeHD.net.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GommeHD.net. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
