@@ -2,11 +2,82 @@
 sidebar_position: 100
 ---
 
-# Basics
+# Grundlagen für die Wiki
 
-Info to come
+### Einführung in `.mdx` für Docusaurus
 
-- Immer .mdx Dateien verwenden (nicht .md)
-- https://docusaurus.io/docs/markdown-features/react
-- https://mdxjs.com/
-- https://mdxjs.com/playground/
+Bei unserer Wiki solltest du **immer** `.mdx`-Dateien verwenden, auch wenn du nur normale Markdown-Funktionen benötigst. `.mdx` bietet dir alle Standard-Markdown-Features, aber zusätzlich kannst du React-Komponenten direkt in deine Dokumentationen einbinden.
+Wir möchten das bei Erstellung immer `.mdx` verwendet wird, da es sein kann, dass jemand der deine Seite verändern möchte, React-Komponenten einbinden möchte.
+
+
+---
+
+### Grundlagen der Nutzung von `.mdx`
+
+Eine `.mdx`-Datei erlaubt dir, neben der Verwendung von normalen Markdown-Features auch JSX-Komponenten (React-Komponenten) zu verwenden. Dies macht es besonders flexibel und interaktiv für die Erstellung von Dokumentationen.
+
+**Warum `.mdx` verwenden?**
+- Du kannst React-Komponenten direkt in Markdown einbinden.
+- Es ist genauso einfach wie Markdown, aber mächtiger.
+
+Hier ist ein Beispiel, wie du JSX innerhalb einer `.mdx`-Datei verwenden kannst:
+
+```mdx
+import MyComponent from './components/MyComponent';
+
+# Willkommen in unserer Dokumentation!
+
+Dies ist ein normaler Markdown-Text.
+
+<MyComponent title="Eine React-Komponente in Markdown" />
+```
+
+---
+
+### Markdown-Komponenten und weitere Ressourcen
+
+Falls du mehr darüber erfahren möchtest, wie du Markdown und React-Komponenten in Docusaurus verwendest, findest du hier hilfreiche Ressourcen:
+
+- [Docusaurus Markdown & React Features](https://docusaurus.io/docs/markdown-features/react)
+- [MDX.js Dokumentation](https://mdxjs.com/)
+- [MDX.js Playground - zum Experimentieren und Ausprobieren von .mdx](https://mdxjs.com/playground/)
+
+---
+
+### Importieren von Komponenten in `.mdx`
+
+Hier ist ein Beispiel, wie du eine Komponente in einer .mdx-Datei importieren kannst, z.B. eine Admonition-Komponente:
+
+```jsx
+import Admonition from '@theme/Admonition';
+
+<Admonition type="tip" title="Tipp">
+  Dies ist ein hilfreicher Hinweis, den du in deiner Dokumentation verwenden kannst!
+</Admonition>
+```
+import Admonition from '@theme/Admonition';
+
+<Admonition type="tip" title="Tipp">
+  Dies ist ein hilfreicher Hinweis, den du in deiner Dokumentation verwenden kannst!
+</Admonition>
+Mehr Informationen dazu findest du in den [Docusaurus Admonition-Dokumentationen](https://docusaurus.io/docs/markdown-features/admonitions#admonitions-with-mdx).
+
+---
+
+### Sortierung von Seiten in der Sidebar
+
+Um die Reihenfolge deiner Dokumentationsseiten in der Sidebar zu steuern, kannst du die sidebar_position-Eigenschaft in den Metadaten der .mdx-Dateien verwenden. Dies sieht so aus:
+```mdx
+---
+sidebar_position: 100
+---
+```
+<Admonition type="info" title="Wichtig!">
+  Hinweis: Verwende immer 100er-Schritte für die sidebar_position, um später genügend Platz für zusätzliche Seiten zu lassen. Zum Beispiel:
+    sidebar_position: 100 für die erste Seite
+    sidebar_position: 200 für die nächste Seite
+</Admonition>
+
+### Zusammenfassung
+
+Verwende in Docusaurus immer .mdx-Dateien, selbst wenn du nur einfache Markdown-Features nutzen willst. So bleibt dir die Möglichkeit, React-Komponenten einzubinden, wenn du später erweiterte Funktionen brauchst.
