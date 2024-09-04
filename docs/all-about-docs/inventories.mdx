@@ -1,0 +1,135 @@
+---
+sidebar_position: 200
+---
+
+
+import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
+
+# Inventare
+
+Die `MinecraftInventory` Komponente ermöglicht es, ein Minecraft-ähnliches Inventar mit anklickbaren Slots, Tooltips und einem optionalen Header darzustellen. Diese Komponente ist nützlich, um Inhalte interaktiv auf Dokumentationsseiten zu präsentieren, ähnlich wie ein Inventar in Minecraft.
+
+### Beispiel-Nutzung
+
+Hier ist ein Beispiel, wie du die `MinecraftInventory` Komponente in deinen `.mdx`-Dateien verwenden kannst:
+
+```jsx
+<MinecraftInventory 
+  headerText="ctugs rl inventar" 
+  slots={[
+    { itemName: "diamond", tooltip: `§b§lctugs Diamond`, link: 'https://gommehd.net' },
+    { itemName: "dirt", tooltip: `§7§lFarbiger Text`, link: 'https://gommehd.net' },
+    { itemName: "gold_ingot", tooltip: `§c§lGold der auf \neine andere Docs Seite linked`, 
+    link: '/basics' },
+  ]}
+/>
+```
+
+
+<MinecraftInventory 
+ headerText="ctugs rl inventar" 
+  slots={[
+    { itemName: "diamond", tooltip: `§b§lctugs Diamond`, link: 'https://gommehd.net' },
+    { itemName: "dirt", tooltip: `§7§lFarbiger Text`, link: 'https://gommehd.net' },
+    { itemName: "gold_ingot", tooltip: `§c§lFarbiger Text der auf \neine andere Docs Seite linked`, link: './basics' },
+  ]}
+/>
+
+### Props
+
+#### `headerText` (string, optional)
+
+<MinecraftInventory 
+ headerText="Hier ist der Header" 
+  slots={[
+    { itemName: "anvil", tooltip: `§a§lHeader Demonstration`, link: 'https://gommehd.net' },
+  ]} 
+/>
+
+#### `slots` (Array, required)
+
+<MinecraftInventory 
+ headerText="Hier ist der Header" 
+  slots={[
+    { itemName: "wooden_sword", tooltip: `§a§lSlots Demonstration`, link: 'https://gommehd.net' },
+  ]} 
+/>
+
+```js
+{ itemName: "wooden_sword", tooltip: `§a§lSlots Demonstration`, link: 'https://gommehd.net' },
+```
+
+Man kann theoretisch so viele Slots wie gewünscht hinzufügen. Jeder Slot hat die folgenden Eigenschaften:
+
+#### `itemname` (string, required)
+
+Der Name des Items, das im Slot angezeigt werden soll. Dieser Name sollte dem Namen des Items in Minecraft entsprechen, z.B. `diamond`, `gold_ingot`, `dirt`, etc.
+Achtung: Stand version 1.21!
+
+#### `Empty Slots`
+
+Für Empty Slots benutze itemname: "empty". Der Vorteil besteht darin, dass
+man so auch Tooltips und Links zu leeren Slots hinzufügen kann.
+
+```js
+{ itemName: "empty", tooltip: `§a§lEin Empty Slot der Links und Tooltips kann.`, link: 'https://gommehd.net' },
+```
+
+
+#### `tooltip` (string, optional)
+
+Fügt einen Tooltip hinzu der beim Hovern über den Slot angezeigt wird. Der Text kann 
+Minecraft-Formatierungscodes enthalten, um die Farbe und Formatierung des Textes zu ändern.
+
+#### `link` (string, optional)
+
+Fügt einen Link hinzu, der geöffnet wird, wenn der Slot angeklickt wird. Dies kann eine externe URL oder ein interner Link zu z.B. einer anderen Docs Seite sein.
+
+
+### Color Codes
+
+Die Color-Codes können genauso benutzt werden wie in Minecraft selbst:
+
+```json
+const colorMap = {
+  "0": "#000000", // Schwarz
+  "1": "#0000AA", // Dunkelblau
+  "2": "#00AA00", // Dunkelgrün
+  "3": "#00AAAA", // Dunkelaqua
+  "4": "#AA0000", // Dunkelrot
+  "5": "#AA00AA", // Dunkelviolett
+  "6": "#FFAA00", // Gold
+  "7": "#AAAAAA", // Grau
+  "8": "#555555", // Dunkelgrau
+  "9": "#5555FF", // Blau
+  a: "#55FF55", // Grün
+  b: "#55FFFF", // Aqua
+  c: "#FF5555", // Rot
+  d: "#FF55FF", // Hellviolett
+  e: "#FFFF55", // Gelb
+  f: "#FFFFFF", // Weiß
+  r: "#FFFFFF", // Reset auf Weiß
+};
+
+const formatMap = {
+  l: "bold", // Fett
+  o: "italic", // Kursiv
+  n: "underline", // Unterstrichen
+  m: "line-through", // Durchgestrichen
+  k: "obfuscated", // Verwischt
+  r: "reset", // Reset aller Formatierungen
+};
+```
+
+<MinecraftInventory 
+ headerText="GommeHDs Inventar" 
+  slots={[
+    { itemName: "orange_terracotta", tooltip: `§6Gold`, link: 'https://gommehd.net' },
+    { itemName: "blue_terracotta", tooltip: `§bBlau`, link: 'https://gommehd.net' },
+    { itemName: "lime_terracotta", tooltip: `§aGrün`, link: 'https://gommehd.net' },
+    { itemName: "tnt", tooltip: `§c§kGommes TNT`, link: 'https://gommehd.net' },
+  ]}
+/>
+
+Hier wurde "§6Gold", "§bBlau", "§aGrün" und §c§kText als Tooltip verwendet, was den Text in der jeweiligen Farbe färbt / formatiert.
+
