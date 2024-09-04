@@ -18,7 +18,7 @@ const MinecraftSlot: React.FC<MinecraftSlotProps> = (props) => {
           <div className={styles.tooltip}>
             <div className={styles.tooltipcontentwrapper}>
               <MinecraftTextFormatter text={props.tooltip} />
-              </div>
+            </div>
           </div>
         )}
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 // Mapping von Minecraft-Farbcodes zu HTML-Farben
 const colorMap = {
@@ -131,10 +131,10 @@ const MinecraftTextFormatter = ({ text }) => {
           formattedText.push(
             <span key={index} style={style}>
               {part.split("\n").map((line, i) => (
-                <div key={i}>
+                <Fragment key={i}>
                   {line}
                   {i < part.split("\n").length - 1 && <br />}
-                </div>
+                </Fragment>
               ))}
             </span>
           );

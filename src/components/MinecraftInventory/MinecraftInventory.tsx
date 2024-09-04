@@ -12,28 +12,34 @@ type MinecraftInventoryProps = {
 const MinecraftInventory: React.FC<MinecraftInventoryProps> = ({
   slots,
   headerText,
-}) => (
-  <div className={styles.inventoryContainer}>
-    <div className={styles.inventory}>
-      {headerText && <div className={styles.header}>{headerText}</div>}
-      {(slots.length % 9 > 0
-        ? slots.concat(
-            new Array(9 - (slots.length % 9)).fill({
-              itemName: "",
-              tooltip: "",
-            })
-          )
-        : slots
-      ).map((slot, index) => (
-        <MinecraftSlot
-          key={slot.itemName + index}
-          itemName={slot.itemName}
-          tooltip={slot.tooltip}
-          link={slot.link}
-        />
-      ))}
+}) => {
+  if (/\blinux\b/i.test(navigator.userAgent)) {
+    document.body.className += " linux";
+  }
+
+  return (
+    <div className={styles.inventoryContainer}>
+      <div className={styles.inventory}>
+        {headerText && <div className={styles.header}>{headerText}</div>}
+        {(slots.length % 9 > 0
+          ? slots.concat(
+              new Array(9 - (slots.length % 9)).fill({
+                itemName: "empty",
+                tooltip: "",
+              })
+            )
+          : slots
+        ).map((slot, index) => (
+          <MinecraftSlot
+            key={slot.itemName + index}
+            itemName={slot.itemName}
+            tooltip={slot.tooltip}
+            link={slot.link}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default MinecraftInventory;
