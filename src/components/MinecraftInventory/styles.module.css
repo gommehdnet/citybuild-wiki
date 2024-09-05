@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Minecraftia";
-    src: url('/fonts/minecraftia/Minecraftia-Regular.ttf') format('truetype');
+    src: url('/fonts/MinecraftRegular.otf') format('truetype');
 }
 
 .inventoryContainer {
@@ -115,7 +115,7 @@
     /* Tooltip-Hintergrund */
     color: #e7e7e7;
     /* Angepasste Textfarbe */
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
     border: 1px solid #300270;
     /* Tooltip-Rand */
