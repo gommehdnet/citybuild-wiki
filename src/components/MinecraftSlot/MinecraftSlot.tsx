@@ -27,7 +27,7 @@ const MinecraftSlot: React.FC<MinecraftSlotProps> = (props) => {
 };
 
 function convertToImageURL(itemName: string) {
-  return `/citybuild-wiki/img/minecraft-items/minecraft_${itemName}.png`;
+  return `/img/minecraft-items/minecraft_${itemName}.png`;
 }
 
 export default MinecraftSlot;
