@@ -1,0 +1,23 @@
+---
+sidebar_position: 300
+---
+import Admonition from '@theme/Admonition';
+import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
+
+# irgendwas
+
+
+
+<Admonition type="tip" title="Tipp">
+  Dies ist ein hilfreicher Hinweis, den du in deiner Dokumentation verwenden kannst!
+</Admonition>
+
+<MinecraftInventory 
+  headerText="Test" 
+  slots={[
+    { itemName: "GommeHD", tooltip: `§b§lctugs Diamond`, link: 'https://gommehd.net' },
+    { itemName: "dirt", tooltip: `§7§lFarbiger Text`, link: 'https://gommehd.net' },
+    { itemName: "gold_ingot", tooltip: `§c§lGold der auf \neine andere Docs Seite linked`, 
+    link: '/basics' },
+  ]}
+/>
