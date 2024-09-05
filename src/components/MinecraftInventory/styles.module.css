@@ -38,7 +38,7 @@
     color: #575757;
     /* Neue Schriftfarbe */
     position: absolute;
-    top: 6px;
+    top: 4px;
     /* Mehr Abstand über dem Text */
     left: 10px;
     /* Abstand vom linken Rand des Inventars */
@@ -115,7 +115,7 @@
     /* Tooltip-Hintergrund */
     color: #e7e7e7;
     /* Angepasste Textfarbe */
-    padding: 6px 10px 6px 10px;
+    padding: 6px 10px 7px 10px;
     border-radius: 5px;
     border: 1px solid #300270;
     /* Tooltip-Rand */
