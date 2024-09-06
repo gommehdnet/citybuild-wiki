@@ -75,6 +75,11 @@ const config: Config = {
           label: "GommeHD.net",
           position: "left",
         },
+        {
+          to: "https://github.com/gommehdnet/citybuild-wiki",
+          label: "CityBuild Wiki auf GitHub",
+          position: "left",
+        },
         /*{
           type: "localeDropdown",
           position: "right",
