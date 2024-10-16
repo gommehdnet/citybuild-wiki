@@ -76,9 +76,9 @@ const config: Config = {
           position: "left",
         },
         {
-          to: "https://github.com/gommehdnet/citybuild-wiki",
-          label: "CityBuild Wiki auf GitHub",
-          position: "left",
+          href: 'https://github.com/gommehdnet/citybuild-wiki',
+          label: 'GitHub',
+          position: 'right',
         },
         /*{
           type: "localeDropdown",
