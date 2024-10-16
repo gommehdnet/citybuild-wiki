@@ -5,4 +5,77 @@ sidebar_position: 100
 
 import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
 
-# Talisman - Übersicht
+# Übersicht
+
+Ein **Talisman** verleiht spezielle Effekte. Diese gibt es in **vier Seltenheitsstufen:** 
+- Gewöhnlich
+- Selten
+- Episch
+- Legendär
+
+Umso höher diese Stufe, desto besser ist der Effekt des jeweiligen Talismans. 
+
+import Admonition from '@theme/Admonition';
+
+<Admonition type="info" title="Hinweis!">
+Beachte, dass es nicht jeden Talisman in jeder Seltenheitsstufe gibt! Eine genaue Liste findest du Ingame im Menü.
+</Admonition>
+
+Insgesamt existieren aktuell **27** verschiedene Talismane, die meisten davon in mehreren Seltenheiten. Der Befehl ```/talisman menu``` zeigt dir alle Talismane und ihre Effekte in Abhängigkeit ihrer Seltenheit an. Dieser öffnet folgendes GUI:
+
+<MinecraftInventory 
+  headerText="Talisman Shop" 
+  slots={[
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "player_head", tooltip: "§eListe aller Talismane\n§7Klicke, um eine Liste aller\n§7verfügbaren Talismane zu sehen"},
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "anvil", tooltip: "§dTalisman herstelle\n§7Klicke, um einen Talisman herzustellen\n\n§7Kosten: §a125.000§2$\n§7Herstellungsdauer: §e6-24 Stunden\n\n§7Hinweis:\n§7Unsere §6Premium§7-Ränge reduzieren die\n§7Kosten für die Herstellung sowie die\n§7Herstellungsdauer\n\n§a<Klicke zum Herstellen>" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "anvil", tooltip: "§dTalisman herstelle\n§7Klicke, um einen Talisman herzustellen\n\n§7Kosten: §a125.000§2$\n§7Herstellungsdauer: §e6-24 Stunden\n\n§7Hinweis:\n§7Unsere §6Premium§7-Ränge reduzieren die\n§7Kosten für die Herstellung sowie die\n§7Herstellungsdauer\n\n§a<Klicke zum Herstellen>" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "anvil", tooltip: "§dTalisman herstelle\n§7Klicke, um einen Talisman herzustellen\n\n§7Kosten: §a125.000§2$\n§7Herstellungsdauer: §e6-24 Stunden\n\n§7Hinweis:\n§7Unsere §6Premium§7-Ränge reduzieren die\n§7Kosten für die Herstellung sowie die\n§7Herstellungsdauer\n\n§a<Klicke zum Herstellen>" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "player_head", tooltip: "§6Talisman-Beutel §7(§afreigeschaltet)\n§7Du hast den Talisman-Beutel bereits freigeschaltet\n\n§7Diesen kannst du mit /talisman bag §7öffnen\n\n§a<Klicke zum Öffnen>", link: '/docs/talisman/bag' },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "player_head", tooltip: "§6Talisman-Beutel vergrößeren\n§7Schalte 3 weitere Slots für deinen\n Talisman-Beutel frei\n\n§7Aktuelle Slotzahl: §e3\n\n§7benötigte Materialien:\n§7-§a25.000,00§2$\n§7- 3x §dBeutel-Fragment\n\n§a<Klicke zum Upgraden>" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+  ]}
+/>
+
+ *(Hinweis: Darstellung des Inventares aus Sicht eines Spielers mit dem [Supremium Rang](https://shop.gommehd.net/items/1-monat-supremium)*)
