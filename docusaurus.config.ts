@@ -56,7 +56,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/wiki_banner.png",
     navbar: {
       title: "GommeHD.net CityBuild Wiki",
       logo: {
@@ -76,9 +76,9 @@ const config: Config = {
           position: "left",
         },
         {
-          href: 'https://github.com/gommehdnet/citybuild-wiki',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/gommehdnet/citybuild-wiki",
+          label: "GitHub",
+          position: "right",
         },
         /*{
           type: "localeDropdown",

@@ -7,8 +7,8 @@ export default function HomepageMinimal(): JSX.Element {
     <div className={clsx("container", styles.centerContent)}>
       <div className="text--center">
         <img
-          src={require("./placeholder.png").default}
-          alt="Placeholder Image"
+          src={require("./gommeskin.png").default}
+          alt="Citybuld Wiki Gomme"
           className={styles.image}
         />
       </div>

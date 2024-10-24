@@ -97,6 +97,7 @@
 
 .slot .tooltip {
     z-index: 10;
+    pointer-events: none;
     /* Tooltip bleibt im Vordergrund */
 }
 
