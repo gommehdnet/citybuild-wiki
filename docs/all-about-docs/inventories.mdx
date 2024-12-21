@@ -5,7 +5,7 @@ sidebar_position: 200
 
 import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
 
-# Inventare
+# Inventar-Erstellung
 
 Die `MinecraftInventory` Komponente ermöglicht es, ein Minecraft-ähnliches Inventar mit anklickbaren Slots, Tooltips und einem optionalen Header darzustellen. Diese Komponente ist nützlich, um Inhalte interaktiv auf Dokumentationsseiten zu präsentieren, ähnlich wie ein Inventar in Minecraft.
 
@@ -15,11 +15,11 @@ Hier ist ein Beispiel, wie du die `MinecraftInventory` Komponente in deinen `.md
 
 ```jsx
 <MinecraftInventory 
-  headerText="ctugs rl inventar" 
+  headerText="GommeHD's Inventar" 
   slots={[
-    { itemName: "diamond", tooltip: `§b§lctugs Diamond`, link: 'https://gommehd.net' },
-    { itemName: "dirt", tooltip: `§7§lFarbiger Text`, link: 'https://gommehd.net' },
-    { itemName: "gold_ingot", tooltip: `§c§lGold der auf \neine andere Docs Seite linked`, 
+    { itemName: "diamond", tooltip: `§b§lGommeHD's Diamond`, link: 'https://gommehd.net' },
+    { itemName: "tnt", tooltip: `§4§lGommemode`, link: 'https://gommehd.net' },
+    { itemName: "gold_ingot", tooltip: `§c§lGold, das auf \neine andere Docs Seite linked`, 
     link: '/basics' },
   ]}
 />
@@ -29,9 +29,9 @@ Hier ist ein Beispiel, wie du die `MinecraftInventory` Komponente in deinen `.md
 <MinecraftInventory 
  headerText="ctugs rl inventar" 
   slots={[
-    { itemName: "diamond", tooltip: `§b§lctugs Diamond`, link: 'https://gommehd.net' },
-    { itemName: "dirt", tooltip: `§7§lFarbiger Text`, link: 'https://gommehd.net' },
-    { itemName: "gold_ingot", tooltip: `§c§lFarbiger Text der auf \neine andere Docs Seite linked`, link: './basics' },
+    { itemName: "diamond", tooltip: `§b§lGommeHD's Diamond`, link: 'https://gommehd.net' },
+    { itemName: "tnt", tooltip: `§4§lGommemode`, link: 'https://gommehd.net' },
+    { itemName: "gold_ingot", tooltip: `§c§lGold, das auf \neine andere Docs Seite linked`, link: './basics' },
   ]}
 />
 
@@ -42,7 +42,7 @@ Hier ist ein Beispiel, wie du die `MinecraftInventory` Komponente in deinen `.md
 <MinecraftInventory 
  headerText="Hier ist der Header" 
   slots={[
-    { itemName: "anvil", tooltip: `§a§lHeader Demonstration`, link: 'https://gommehd.net' },
+    { itemName: "anvil", tooltip: `§a§lHeader Demonstration` },
   ]} 
 />
 
@@ -51,12 +51,12 @@ Hier ist ein Beispiel, wie du die `MinecraftInventory` Komponente in deinen `.md
 <MinecraftInventory 
  headerText="Hier ist der Header" 
   slots={[
-    { itemName: "wooden_sword", tooltip: `§a§lSlots Demonstration`, link: 'https://gommehd.net' },
+    { itemName: "wooden_sword", tooltip: `§a§lSlots Demonstration` },
   ]} 
 />
 
 ```js
-{ itemName: "wooden_sword", tooltip: `§a§lSlots Demonstration`, link: 'https://gommehd.net' },
+{ itemName: "wooden_sword", tooltip: `§a§lSlots Demonstration` },
 ```
 
 Man kann theoretisch so viele Slots wie gewünscht hinzufügen. Jeder Slot hat die folgenden Eigenschaften:
@@ -122,7 +122,7 @@ const formatMap = {
 ```
 
 <MinecraftInventory 
- headerText="GommeHDs Inventar" 
+ headerText="Troll Inventar" 
   slots={[
     { itemName: "orange_terracotta", tooltip: `§6Gold`, link: 'https://gommehd.net' },
     { itemName: "blue_terracotta", tooltip: `§bBlau`, link: 'https://gommehd.net' },

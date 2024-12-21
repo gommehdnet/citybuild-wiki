@@ -1,0 +1,105 @@
+---
+sidebar_position: 100
+---
+
+
+import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
+
+# Jobs - Übersicht
+
+## Basics
+
+Jobs sind eine der wichtigsten Methoden, um Geld sowie Erfahrungspunkte für das CityBuild Level zu verdienen.\
+Es gibt verschiedene Arten von Jobs, bei denen du unterschiedliche Aufgaben meistern musst. Direkt am Spawn der CityBuild-Lobby findest du einen NPC mit dem Namen "Jobs". Bei ihm kannst du dir einen Job aussuchen, alternativ geht dies auch mit ```/job info``` oder ```/job menu```.
+
+<MinecraftInventory 
+  headerText="Jobs" 
+  slots={[
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "wheat", tooltip: "§eJob des Monats\n§7Der Job des Monats ist §cFarmer\n§7\nVorteile:\n§b+ §735 % mehr XP\n§b+ §720 % weniger Aufwand", link: '/docs/jobs/job_of_the_month'},
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+
+    { itemName: "cornflower", tooltip: "§cSammler §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Sammler ist es deine Aufgabe die\nfreie Natur zu erkunden und viele\nbunte Blumen zu sammeln\n\nSpieler mit diesem Job: §b113", link: '/docs/jobs/list#sammler-freigeschaltet-ab-level-1' },
+    { itemName: "iron_shovel", tooltip: "§cGräber §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Gräber wühlst du den ganzen\nArbeitstag im Boden - der perfekte Job\nfür Anfänger, um ins Business\neinzusteigen\n\nSpieler mit diesem Job: §b227", link: '/docs/jobs/list#gräber-freigeschaltet-ab-level-1' },
+    { itemName: "stone_axe", tooltip: "§cHolzfäller §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Holzfäller arbeitest du viel im\nWald, denn deine Aufgabe ist es, Bäume\nzu fällen\n\nSpieler mit diesem Job: §b51", link: '/docs/jobs/list#holzfäller-freigeschaltet-ab-level-1' },
+    { itemName: "spyglass", tooltip: "§cAbenteurer §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Abenteurer ist es dein Job seltene\nund gefährliche Monster zu finden und\nzu töte\n\nSpieler mit diesem Job: §b419", link: '/docs/jobs/list#abenteruer-freigeschaltet-ab-level-1' },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "fishing_rod", tooltip: "§cAngler §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Angler genießt du deine Zeit am\nWasser und fängst währenddessen Fische\nund ab und zu sogar einen Schatz\n\nSpieler mit diesem Job: §b187", link: '/docs/jobs/list#angler-freigeschaltet-ab-level-1' },
+    { itemName: "netherite_pickaxe", tooltip: "§cBergarbeiter §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Bergarbeiter bist du tief unter\nTage damit beschäftigt, Erze abzubauen\n\nSpieler mit diesem Job: §b82", link: '/docs/jobs/list#bergarbeiter-freigeschaltet-ab-level-7' },
+    { itemName: "porkchop", tooltip: "§cJäger §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Jäger bist du oft an der freien\nNatur, immer auf der Lauer um Tiere zu\ntöten\n\nSpieler mit diesem Job: §b67", link: '/docs/jobs/list#jäger-freigeschaltet-ab-level-11' },
+    { itemName: "wheat", tooltip: "§cFarmer §7(freigeschaltet)\n§7Jobbeschreibung:\n§7Als Farmer pflanzt und pflegst du\ndeine Felder, um die Ergebnisse derer zu ernten\n\nSpieler mit diesem Job: §b183", link: '/docs/jobs/list#farmer-freigeschaltet-ab-level-18' },
+
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+
+    { itemName: "question_skull", tooltip: "§aAnleitung lesen\n§7Klicke, um die Anleitung erneut zu lesen" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+  ]}
+/>
+ *(Darstellung des Inventares nach Freischaltung aller Jobs)*
+
+import Admonition from '@theme/Admonition';
+
+<Admonition type="tip" title="Tipp!">
+Jobs können ausschließlich in den Farmwelten ausgeführt werden!\
+
+Solltest du einen Job nicht mehr ausüben wollen kannst du diesen über ```/job quit <Job-Name>``` verlassen!
+</Admonition>
+
+## Verschiedene Jobs und deren Stufen
+
+Jobs haben eine Anforderung: Das CityBuild-Level. Standardmäßig kannst du nur einen Job gleichzeitig ausführen.
+Solltest du dich aber dazu entschließen, deinen Job zu wechseln und somit den derzeitigen Job zu kündigen, werden nur deine bereits freigeschaltete Level gespeichert. Angefangene werden zurückgesetzt.
+Zu Anfang hat jeder Spieler Zugriff auf folgende **5** Jobs:
+- Sammler
+- Gräber
+- Holzfäller
+- Abenteruer
+- Angler
+
+Mit der Ausübung eines Jobs erhältst du Job-XP, durch die dein Job um bis zu vier Stufen aufsteigt. Zu Beginn bist du immer automatisch in der Stufe "Anfänger".
+- Anfänger
+- Fortgeschrittener
+- Profi
+- Meister
+- Elite
+
+Je höher dieses Level, desto höher ist die Anzahl deiner Belohnungen (CityBuild-XP & Geld) und die Wahrscheinlichkeit, doppelte Items gedroppt zu bekommen.
+Deinen Fortschritt im Job-Level siehst du mit ```/job stats``` oder im Job-Menü. 
+
+<Admonition type="info" title="Hinweis!">
+Job-Level setzen sich zu Beginn jeder Season auf Anfänger zurück.
+</Admonition>
+
+## Stündliches Limit
+
+Dem Job- und dem Job-Level-abhängig ist die maximale Anzahl der pro Stunde erreichbaren Belohnungen limitiert.
+
+Diese Limitierung setzt sich zu jeder vollen Stunde zurück. Erreichst du dein Limit, wirst du im Chat darauf hingewiesen.\
+Ist dies der Fall, kannst du mit deinem Job bis zur vollen Stunde keine weiteren Belohnungen verdienen.
+Mit ```/job limit``` siehst du, wie weit du bis zum stündlichen Limit fortgeschritten bist.
+
+## Nebenjob
+
+Spielern mit dem **Supremium-Rang** steht die Auswahl eines **Nebenjobs**, also einem weiteren Job neben seinem Hauptjob, frei.\
+Mit diesem werden **50%** des Geldes und der XP des Stundenlimits des jeweiligen Jobs verdient.

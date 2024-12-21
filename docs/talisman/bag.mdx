@@ -1,0 +1,77 @@
+---
+sidebar_position: 300
+---
+
+
+# Beutel
+
+## Funktionsweise des Beutels
+
+Um den Effekt eines Talismans zu nutzen, muss dieser in den Talisman-Beutel gelegt werden. Talismane im Beutel wirken sofort und können jederzeit ausgetauscht werden.
+
+Im Talisman-Shop (`/talisman menu`) gibt es zwei Stellen für den Talisman-Beutel. Dieser muss zunächst durch einen Klick auf das rechte Item kostenlos freigeschaltet werden. 
+
+Nach der Freischaltung kannst du deinen Beutel mit `/talisman bag` oder kurz `/tb` öffnen. Standardmäßig stehen dir **drei** Slots zur Verfügung. So sieht dieser aus:
+
+import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
+
+<MinecraftInventory 
+  headerText="Deine Talismane" 
+  slots={[
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "red_stained_glass_pane", tooltip: "§cZurück", link: '/docs/talisman/overview' },
+
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "barrier", tooltip: "§cNoch nicht freigeschaltet\n§7Du hast diesen Slot noch\n nicht freigeschaltet" },
+    { itemName: "barrier", tooltip: "§cNoch nicht freigeschaltet\n§7Du hast diesen Slot noch\n nicht freigeschaltet" },
+    { itemName: "barrier", tooltip: "§cNoch nicht freigeschaltet\n§7Du hast diesen Slot noch\n nicht freigeschaltet" },
+    { itemName: "barrier", tooltip: "§cNoch nicht freigeschaltet\n§7Du hast diesen Slot noch\n nicht freigeschaltet" },
+    { itemName: "barrier", tooltip: "§cNoch nicht freigeschaltet\n§7Du hast diesen Slot noch\n nicht freigeschaltet" },
+    { itemName: "barrier", tooltip: "§cNoch nicht freigeschaltet\n§7Du hast diesen Slot noch\n nicht freigeschaltet" },
+
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+  ]}
+/>
+ *(Hinweis: Darstellung des Inventares aus Sicht eines Spielers der den Beutel frisch freigeschaltet hat.*)
+
+## Erweitern des Talisman-Beutels
+
+Über den Talisman-Shop kannst du deinen Beutel auf bis zu 36 Slots erweitern. Dafür fallen Gebühren an und du benötigst das Custom Item Beutel-Fragment, welches du mit 
+einer gewissen Wahrscheinlichkeit durch das Besiegen bestimmter Bosse erhältst. Es kann auch durch den Handel mit anderen Spielern erworben werden.
+
+| Beutel-Slots | Anzahl benötigter Fragmente | Entsprechender Preis für die Freischaltung |
+|:----------:|:----------:|:----------:|
+| 3 | 0 | 0$ |
+| 6 | 3 | 25.000$ |
+| 9 | 4 | 50.000$ |
+| 12 | 5 | 75.000$ |
+| 15 | 6 | 100.000$ |
+| 18 | 7 | 125.000$ |
+| 21 | 8 | 150.000$ |
+| 24 | 9 | 175.000$ |
+| 27 | 10 | 200.000$ |
+| 30 | 11 | 225.000$ |
+| 33 | 12 | 250.000$ |
+| 36 | 13 | 275.000$ |
+
+**Gesamtkosten Übersicht:**
+| Beutel-Slots | Anzahl benötigter Fragmente | Entsprechender Preis für die Freischaltung |
+|:----------:|:----------:|:----------:|
+| 36 | 88 | 1.650.000$ |

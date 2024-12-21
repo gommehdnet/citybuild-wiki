@@ -1,0 +1,46 @@
+---
+sidebar_position: 400
+---
+
+import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
+
+# Kombination von Talismanen
+
+Über das unterste Item im Talisman Menü gelangt man in das hier abgebildete GUI. Dort kann man auf die zwei Barrieren je einen Talisman der gleichen Seltenheit legen und über das Plus kombinieren. Gelingt dies, so erhält man einen Talisman mit einer höheren Stufe, scheitert es, erhält man einen Talisman zurück.
+Kombiniert man zwei Legendäre Talismane erhält man einen zufälligen anderen Legendären.
+
+<MinecraftInventory 
+  headerText="Talisman Shop" 
+  slots={[
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: ""},
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "red_stained_glass_pane", tooltip: "§cZurück", link: '/docs/talisman/overview' },
+
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "barrier", tooltip: "§eSlot #1\n§7Lege hier einen Talisman ein" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "plus_skull", tooltip: "§dTalisman kombinieren\n§7Kombiniere zwei Talismane der\ngleichen Seltenheit für die Chance\nauf ein Upgrade. Das Kombinieren\nzweier Talismane der gleichen Art\nerhöht die Chance\n\n§cZur Kostenermittlung musst du erst\nzwei Talismane einlegen\n\n§7Hinweis:\nUnsere §6Premium§7-Ränge\nreduzieren die Kosten\n\n§a<Klicke zum Kombinieren>"  },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "barrier", tooltip: "§eSlot #1\n§7Lege hier einen Talisman ein" },
+    { itemName: "empty", tooltip: "" },
+    { itemName: "empty", tooltip: "" },
+
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+    { itemName: "gray_stained_glass_pane", tooltip: "" },
+  ]}
+/>
+ 
