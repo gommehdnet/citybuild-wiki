@@ -1,6 +1,6 @@
 {
-  "label": "Alles Über Docs",
-  "position": 1,
+  "label": "Informtionen zur Seitenerstellung",
+  "position": 9,
   "link": {
     "type": "generated-index"
   }
