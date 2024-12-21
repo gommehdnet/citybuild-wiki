@@ -4,3 +4,58 @@ sidebar_position: 400
 
 
 # Rollen und deren Berechtigungen
+Um gemeinsam mit anderen Spielern auf einem Plot bauen zu können, können verschiedene Rollen vergeben werden. Dabei wird zwischen den Rollen Owner (Besitzer), Co-Owner (Mitbesitzer), Admin und Builder (Bauarbeiter) unterschieden.  
+
+Die Owner-Rolle ist die höchste Rolle und wird standardmäßig automatisch dem Ersteller des Plots zugewiesen. Sie kann nur durch den Verkauf des Plots (/plot offer Spieler Betrag) an einen anderen Spieler übertragen werden. Nach dem Verkauf verliert der ursprüngliche Besitzer jegliche Berechtigung, das Plot zu bearbeiten.  
+
+Ein Builder darf das Plot nur bearbeiten, solange sich der Besitzer in derselben Plotwelt befindet. Co-Owner und Admins haben jederzeit unabhängige Rechte. Der Co-Owner besitzt fast dieselben Rechte wie der Owner, mit Ausnahme der Befehle /plot buildall, /plot clear, /plot delete, /plot merge, /plot move und /plot sethome sowie der Berechtigung, das Plot zu verkaufen.  
+
+Mit /plot setrole Spieler Co_Owner/Admin/Builder kannst du standardmäßig bis zu 15 Mitglieder ernennen. Plot-Besitzer mit dem Premium-Rang haben 30 Plätze, während der Supremium-Rang 50 freie Mitgliederplätze bietet. Eine Rolle kannst du mit /plot removerole Spieler wieder entziehen.  
+
+Gib Rechte nur an Personen, denen du vertraust, da diese Zugriff auf den gesamten Inhalt des Plots erhalten. Mit /toggle plot roles kannst du festlegen, ob andere Spieler dir auf ihrem Plot Rechte geben dürfen.  
+
+Die Berechtigungen jeder Rolle sind in der folgenden Tabelle detailliert aufgelistet.  
+
+| Berechtigungen                               | Owner          | Co-Owner       | Admin          | Builder            | Spieler              |
+|---------------------------------------------|---------------|---------------|---------------|-------------------|--------------------|
+| Plot betreten                               | ✓             | ✓             | ✓             | ✓                 | wenn öffentlich      |
+| Bauberechtigung                             | ✓             | ✓             | ✓             | wenn Owner in gleicher Plotwelt | wenn /plot buildall an |
+| Lift- & Teleportationsschilder benutzen     | ✓             | ✓             | ✓             | ✓                 | wenn öffentlich      |
+| /plot info                                  | ✓             | ✓             | ✓             | ✓                 | wenn öffentlich      |
+| /plot deleteinfo                            | ✓             | ✓             | ✓             | ✖                 | ✖                  |
+| /plot row                                   | ✓             | ✓             | ✓             | ✖                 | ✖                  |
+| /plot border                                | ✓             | ✓             | ✓             | ✖                 | ✖                  |
+| /entitylimits                               | ✓             | ✓             | ✓             | ✖                 | ✖                  |
+| /plot offer                                 | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| Immun gegen Plot-Config-Einstellungen       | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| Shop-, Lift- & Teleportationsschilder erstellen | ✓          | ✓             | ✓             | ✖                 | ✖                  |
+| /plot center                                | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot setrole                               | ✓             | bis Admin      | ✖             | ✖                 | ✖                  |
+| /plot removerole                            | ✓             | bis Admin      | ✖             | ✖                 | ✖                  |
+| /plot kick                                  | ✓             | bis Co-Owner   | ✖             | ✖                 | ✖                  |
+| /plot biome                                 | wenn Permission freigeschaltet | wenn vom Owner freigeschaltet | ✖ | ✖ | ✖ |
+| Bodyguards setzen & bearbeiten              | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot title                                 | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot setprivacy                            | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot setspawn                              | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot hologram                              | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot fly                                   | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot wall                                  | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot edge                                  | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot chat                                  | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot ban                                   | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot unban                                 | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot config                                | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot setalias                              | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot removealias                           | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot setid                                 | ✓             | ✓             | ✖             | ✖                 | ✖                  |
+| /plot buildall                              | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| /plot sethome                               | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| /plot merge                                 | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| /plot move                                  | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| /plot reset                                 | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| /plot delete                                | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+| Plot verkaufen                              | ✓             | ✖             | ✖             | ✖                 | ✖                  |
+
+
+Mit dem Befehl /plot buildall kannst du allen Spielern auf deinem Plot die Berechtigung zum Bauen oder Abbauen erteilen.

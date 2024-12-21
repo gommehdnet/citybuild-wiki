@@ -6,3 +6,47 @@ sidebar_position: 100
 import MinecraftInventory from '@site/src/components/MinecraftInventory/MinecraftInventory';
 
 # Plotwelt - Übersicht
+
+Um eine Plotwelt zu betreten, gehe durch das große Portal in der CityBuild-Lobby (/warp Plotwelten). Dort gelangst du zu einer Übersicht aller Plotwelten und kannst eine beliebige auswählen. Plotwelten, in denen keine freien Plots verfügbar sind, werden in der GUI als Graspfade dargestellt. Diese kannst du unten rechts aus der Anzeige herausfiltern.
+
+Die 11 Plotwelten sind in 3 Stufen unterteilt, wobei lediglich Plotwelt "Brick" Stufe 2 und Plotwelt "Ice" Stufe 3 sind.
+Diese Stufen unterscheiden sich durch die größe und die Preise der Plots eine detaillierte Auflistung der Unterschiede folgt:
+
+**Plotwelten Poppy, Pumpkin, Sponge, Melon, Slime, Clay, Honey¹, Bamboo¹ und Coral¹:**  
+- **Grundstücksgröße:** 35x35 Blöcke  
+- **Grundstückspreis:** Bis zum 40. Teilplot aufsteigend; maximal 61.500$
+
+**Plotwelt Brick:**  
+- **Grundstücksgröße:** 39x39 Blöcke  
+- **Grundstückspreis:** 10.000$ Aufpreis; maximal 71.500$  
+- **Mindestlevel:** Level 7
+
+**Plotwelt Ice:**  
+- **Grundstücksgröße:** 45x45 Blöcke  
+- **Grundstückspreis:** 90.000$ Aufpreis; maximal 151.500$  
+- **Mindestlevel:** Level 22  
+
+
+## Plot-Inaktivitätslöschung
+
+Grundstücke von Spielern werden nach einer bestimmten Zeit der Inaktivität gelöscht und freigegeben. Die Löschung erfolgt automatisch basierend auf dem Level des Grundstücks und der Dauer der Inaktivität des Spielers.
+
+Hier sind die Regeln und Zeitrahmen für die Inaktivitätslöschung:
+
+- **Level 0**: 28 Tage Inaktivität
+- **Level 4**: 45 Tage Inaktivität
+- **Level 8**: 60 Tage Inaktivität
+- **Level 11**: 90 Tage Inaktivität
+- **Level 13**: 120 Tage Inaktivität
+- **Level 21**: 180 Tage Inaktivität
+
+**Premium- und Supremium-Rang**\
+Falls der Spieler den **Premium-** oder **Supremium-Rang** hat, wird die Löschung um **50%** der angegebenen Zeit verzögert.
+
+**Wiederherstellung eines gelöschten Plots**\
+Wenn ein Grundstück aufgrund von Inaktivität gelöscht wurde, kann es über den Befehl **/plot restore** wiederhergestellt werden. Dies ist jedoch nur für gelöschte Grundstücke ab dem **12. Mai 2023** möglich.
+
+**Überprüfung der Löschzeit**\
+Mit dem Befehl **/plot deleteinfo** kann man die genaue Zeit und den Zeitpunkt des Löschvorgangs für das aktuell betrachtete Grundstück einsehen. Die Löschung erfolgt normalerweise zwischen **20:00 Uhr und 21:00 Uhr** und innerhalb eines Zeitraums von **48 Stunden**.
+
+Diese Regeln helfen, den Serverplatz effizient zu verwalten, indem ungenutzte Grundstücke automatisch gelöscht werden.
