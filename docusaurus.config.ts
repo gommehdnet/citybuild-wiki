@@ -68,7 +68,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Get Started",
+          label: "Seiten",
         },
         {
           to: "https://gommehd.net",
