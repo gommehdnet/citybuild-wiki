@@ -11,6 +11,7 @@ export default function HomepageMinimal(): JSX.Element {
           alt="Citybuld Wiki Gomme"
           className={styles.image}
           onClick={() => (window.location.href = "/docs/category/lobby")}
+          style={{ cursor: "pointer" }}
         />
       </div>
       <div className="text--center">
