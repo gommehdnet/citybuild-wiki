@@ -55,6 +55,15 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve("docusaurus-lunr-search"),
+      {
+        languages: ["en", "de"], // language codes
+      },
+    ],
+  ],
+
   themeConfig: {
     image: "img/wiki_banner.png",
     navbar: {
