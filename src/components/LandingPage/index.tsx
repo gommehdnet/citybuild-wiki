@@ -10,6 +10,7 @@ export default function HomepageMinimal(): JSX.Element {
           src={require("./gommeskin.png").default}
           alt="Citybuld Wiki Gomme"
           className={styles.image}
+          onClick={() => (window.location.href = "/docs/category/lobby")}
         />
       </div>
       <div className="text--center">
